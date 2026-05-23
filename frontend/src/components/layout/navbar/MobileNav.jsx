@@ -1,8 +1,8 @@
 import React from 'react';
-import IconButton from '../ui/IconButton';
+import IconButton from '../../ui/IconButton';
 import { Menu, Search, ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { assets } from '../../assets/data/assets';
+import { assets } from '../../../assets/data/assets';
 
 const MobileNav = ({ setOpenMenu }) => {
   return (

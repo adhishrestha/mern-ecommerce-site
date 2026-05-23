@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import Container from '../ui/Container';
+import Container from '../../ui/Container';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 import MobileSidebar from './MobileSidebar';
-import useScrollDirection from '../../hooks/useScrollDirection';
-import useBodyScrollLock from '../../hooks/useBodyScrollLock';
-import useEscapeKey from '../../hooks/useEscapeKey';
+import useScrollDirection from '../../../hooks/useScrollDirection';
+import useBodyScrollLock from '../../../hooks/useBodyScrollLock';
+import useEscapeKey from '../../../hooks/useEscapeKey';
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);

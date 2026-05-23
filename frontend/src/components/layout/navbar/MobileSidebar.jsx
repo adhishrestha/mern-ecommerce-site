@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { assets } from '../../assets/data/assets';
-import IconButton from '../ui/IconButton';
+import { assets } from '../../../assets/data/assets';
+import IconButton from '../../ui/IconButton';
 import { X } from 'lucide-react';
 import { navLinks } from './navLinks';
-import { getNavClass } from '../../utils/navClass';
+import { getNavClass } from '../../../utils/navClass';
 
 const MobileSidebar = ({ openMenu, setOpenMenu }) => {
   return (
@@ -14,7 +14,7 @@ const MobileSidebar = ({ openMenu, setOpenMenu }) => {
     >
       {/* panel */}
       <aside
-        className={`h-full w-[70%] sm:w-[50%] md:w-[320px] bg-white p-5 shadow-xl transition-transform duration-300 ${openMenu ? 'translate-x-0' : '-translate-x-full'}`}
+        className={`h-full w-[70%] bg-white p-5 shadow-xl transition-transform duration-300 sm:w-[50%] md:w-[320px] ${openMenu ? 'translate-x-0' : '-translate-x-full'}`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Sidebar Header */}
@@ -24,12 +24,12 @@ const MobileSidebar = ({ openMenu, setOpenMenu }) => {
           </Link>
 
           <IconButton ariaLabel="Close menu" onClick={() => setOpenMenu(false)}>
-            <X className="w-6 h-6" />
+            <X className="h-6 w-6" />
           </IconButton>
         </div>
 
         {/* Mobile Links */}
-        <ul className="p-4 space-y-2">
+        <ul className="space-y-2 p-4">
           {navLinks.map((link) => (
             <li key={link.name}>
               <NavLink
