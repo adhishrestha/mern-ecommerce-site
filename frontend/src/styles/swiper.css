@@ -1,0 +1,8 @@
+.category-swiper .swiper-pagination {
+  position: static;
+  /* margin-top: 40px; */
+}
+/* Active Bullet */
+.category-swiper .swiper-pagination-bullet-active {
+  background: #826f66;
+}
