@@ -6,6 +6,7 @@ import category_1 from '../images/category-1.webp';
 import category_2 from '../images/category-2.webp';
 import category_3 from '../images/category-3.webp';
 import category_4 from '../images/category-4.webp';
+import promo_img from '../images/promo-img.webp';
 
 export const assets = {
   logo,
@@ -16,4 +17,5 @@ export const assets = {
   category_2,
   category_3,
   category_4,
+  promo_img,
 };
