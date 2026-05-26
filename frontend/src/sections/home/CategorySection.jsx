@@ -1,5 +1,5 @@
 import CategoryCard from '../../components/cards/CategoryCard';
-import CarouselSection from '../../components/common/CarouselSection';
+import CarouselSection from '../../components/shared/CarouselSection';
 import { assets } from '../../assets/data/assets';
 import Container from '../../components/ui/Container';
 
