@@ -16,10 +16,10 @@ const SplitSection = ({
   return (
     <section>
       <Container>
-        <div className="grid grid-cols-1 items-center lg:grid-cols-2">
+        <div className="grid grid-cols-1 bg-[#f5f5f5] lg:grid-cols-2">
           {/* CONTENT */}
           <div
-            className={`flex justify-center bg-[#f5f5f5] px-6 py-14 lg:px-16 lg:py-20 ${mobileContentFirst ? 'order-1' : 'order-2'} lg:order-1 ${reverse ? 'lg:order-2' : ''} `}
+            className={`flex justify-center px-6 py-14 lg:px-16 lg:py-20 ${mobileContentFirst ? 'order-1' : 'order-2'} ${reverse ? 'lg:order-2' : 'lg:order-1'} `}
           >
             <div className="max-w-md text-center">
               {subtitle && (
@@ -33,7 +33,7 @@ const SplitSection = ({
               <p className="mb-8 text-base leading-6 font-normal text-[#595667]">
                 {description}
               </p>
-              {buttonText && (
+              {buttonText && buttonLink && (
                 <Link
                   to={buttonLink}
                   className="inline-block text-sm leading-5 font-bold tracking-wide uppercase underline underline-offset-4 transition hover:opacity-70"
@@ -46,13 +46,13 @@ const SplitSection = ({
 
           {/* IMAGE */}
           <div
-            className={`h-full ${mobileContentFirst ? 'order-2' : 'order-1'} lg:order-2 ${reverse ? 'lg:order-1' : ''} `}
+            className={`aspect-square sm:aspect-16/10 md:aspect-5/4 lg:aspect-4/3 ${mobileContentFirst ? 'order-2' : 'order-1'} ${reverse ? 'lg:order-1' : 'lg:order-2'} `}
           >
             <img
               src={image}
               alt={imageAlt || title}
               loading="lazy"
-              className="h-[320px] w-full object-cover lg:h-full"
+              className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
             />
           </div>
         </div>

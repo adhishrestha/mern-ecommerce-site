@@ -18,6 +18,10 @@ import best_seller_img6 from '../images/products/best-seller-img6.webp';
 import best_seller_img7 from '../images/products/best-seller-img7.webp';
 import best_seller_img8 from '../images/products/best-seller-img8.webp';
 
+//About Images
+import about_img1 from '../images/about/about-img1-home-sec.webp';
+import about_img2 from '../images/about/about-img2-home-sec.webp';
+
 export const assets = {
   logo,
   footer_logo,
@@ -36,4 +40,6 @@ export const assets = {
   best_seller_img6,
   best_seller_img7,
   best_seller_img8,
+  about_img1,
+  about_img2,
 };
