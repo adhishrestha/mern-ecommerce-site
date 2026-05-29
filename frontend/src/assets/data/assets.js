@@ -26,6 +26,9 @@ import p_img12 from '../images/products/p_img12.webp';
 import about_img1 from '../images/about/about-img1-home-sec.webp';
 import about_img2 from '../images/about/about-img2-home-sec.webp';
 
+//Blog Images
+import blog_img1 from '../images/blog/blog-img1.webp';
+
 export const assets = {
   logo,
   footer_logo,
@@ -50,4 +53,5 @@ export const assets = {
   p_img12,
   about_img1,
   about_img2,
+  blog_img1,
 };

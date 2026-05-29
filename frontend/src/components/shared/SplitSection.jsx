@@ -52,7 +52,7 @@ const SplitSection = ({
               src={image}
               alt={imageAlt || title}
               loading="lazy"
-              className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+              className="h-full w-full object-cover"
             />
           </div>
         </div>

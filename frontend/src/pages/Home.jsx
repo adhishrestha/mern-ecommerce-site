@@ -6,6 +6,7 @@ import PromoSection from '../sections/home/PromoSection';
 import BestSellerSection from '../sections/home/BestSellerSection';
 import AboutSection from '../sections/home/AboutSection';
 import NewArrivalSection from '../sections/home/NewArrivalSection';
+import BlogSection from '../sections/home/BlogSection';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <BestSellerSection />
       <AboutSection />
       <NewArrivalSection />
+      <BlogSection />
     </>
   );
 };
