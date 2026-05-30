@@ -23,7 +23,7 @@ const SplitSection = ({
           >
             <div className="max-w-md text-center">
               {subtitle && (
-                <p className="mb-6 text-lg font-semibold tracking-[3px] text-[#807F86] uppercase">
+                <p className="mb-6 text-lg leading-6 font-semibold tracking-[0.06em] text-[#807F86] uppercase">
                   {subtitle}
                 </p>
               )}
@@ -36,7 +36,7 @@ const SplitSection = ({
               {buttonText && buttonLink && (
                 <Link
                   to={buttonLink}
-                  className="inline-block text-sm leading-5 font-bold tracking-wide uppercase underline underline-offset-4 transition hover:opacity-70"
+                  className="inline-block text-sm leading-5 font-bold tracking-[0.06em] text-[#595667] uppercase underline underline-offset-4 transition hover:opacity-70"
                 >
                   {buttonText}
                 </Link>
