@@ -7,6 +7,7 @@ import BestSellerSection from '../sections/home/BestSellerSection';
 import AboutSection from '../sections/home/AboutSection';
 import NewArrivalSection from '../sections/home/NewArrivalSection';
 import BlogSection from '../sections/home/BlogSection';
+import NewsLetterSection from '../sections/home/NewsLetterSection';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <AboutSection />
       <NewArrivalSection />
       <BlogSection />
+      <NewsLetterSection />
     </>
   );
 };
