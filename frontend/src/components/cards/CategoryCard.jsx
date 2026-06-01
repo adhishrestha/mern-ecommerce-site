@@ -13,9 +13,9 @@ const CategoryCard = ({ image, title }) => {
       </div>
 
       <div className="mt-6 text-center">
-        <h3 className="text-lg font-semibold tracking-wide text-[#3A3845] uppercase">
+        <h2 className="text-lg font-semibold tracking-wide text-[#3A3845] uppercase">
           {title}
-        </h3>
+        </h2>
       </div>
     </article>
   );
