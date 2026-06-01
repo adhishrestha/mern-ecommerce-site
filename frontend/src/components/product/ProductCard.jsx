@@ -30,7 +30,7 @@ const ProductCard = ({ product }) => {
           ${product.price}
         </p>
 
-        <p className="mt-2 line-clamp-1 text-sm leading-7 font-normal text-[#807F86]">
+        <p className="mt-2 line-clamp-1 text-sm leading-7 font-normal text-[#5A5A5A]">
           {product.description}
         </p>
         <div className="mt-auto pt-6">

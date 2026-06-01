@@ -9,7 +9,7 @@ import { footerLinks } from './footerLinks';
 
 const Footer = () => {
   return (
-    <footer className="bg-primary w-full border-t">
+    <footer className="bg-primary w-full border-t text-gray-300">
       <Container>
         {/* Top Footer */}
         <section className="grid grid-cols-1 py-8 lg:grid-cols-[1fr_2fr] lg:py-12">
@@ -21,7 +21,7 @@ const Footer = () => {
             </Link>
 
             {/* Description */}
-            <p className="mt-4.5 max-w-xs text-sm leading-6 font-normal text-[#E5E5E5]">
+            <p className="mt-4.5 max-w-xs text-sm leading-6 font-normal text-gray-300">
               Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam
               mauris sed ma
             </p>
@@ -78,14 +78,14 @@ const Footer = () => {
             >
               <Link
                 to="/terms-and-conditions"
-                className="transition-colors hover:text-white focus:ring-2 focus:outline-none"
+                className="text-gray-300 transition-colors hover:text-white focus:ring-2 focus:outline-none"
               >
                 Terms and Conditions
               </Link>
               <span className="hidden text-white sm:inline">|</span>
               <Link
                 to="/privacy-policy"
-                className="transition-colors hover:text-white"
+                className="text-gray-300 transition-colors hover:text-white"
               >
                 Privacy and Policy
               </Link>
