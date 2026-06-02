@@ -10,6 +10,11 @@ const HeroLayout = ({ image, imageAlt, overlay = true, children }) => {
           src={image}
           alt={imageAlt}
           className="h-[320px] w-full object-cover sm:h-[398px] lg:h-[640px]"
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
+          width="1440"
+          height="642"
         />
 
         {/* OVERLAY */}
