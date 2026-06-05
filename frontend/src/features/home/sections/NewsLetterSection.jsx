@@ -1,7 +1,7 @@
 import React from 'react';
-import Container from '../../components/ui/Container';
-import Input from '../../components/ui/Input';
-import Button from '../../components/ui/Button';
+import Container from '../../../components/ui/Container';
+import Input from '../../../components/ui/Input';
+import Button from '../../../components/ui/Button';
 
 const NewsletterSection = () => {
   const handleSubmit = (e) => {

@@ -1,9 +1,9 @@
 import React from 'react';
-import Container from '../../components/ui/Container';
-import SectionHeader from '../../components/shared/SectionHeader';
-import ProductGrid from '../../components/product/ProductGrid';
-import { getNewArrivals } from '../../utils/productUtils';
-import { products } from '../../components/product/productData';
+import Container from '../../../components/ui/Container';
+import SectionHeader from '../../../components/shared/SectionHeader';
+import ProductGrid from '../../../components/product/ProductGrid';
+import { getNewArrivals } from '../../../utils/productUtils';
+import { products } from '../../../data/productData';
 
 const NewArrivalSection = () => {
   const newArrivals = getNewArrivals(products);

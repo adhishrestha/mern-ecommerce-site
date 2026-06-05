@@ -1,0 +1,21 @@
+import CategoryCard from '../../../components/cards/CategoryCard';
+import CarouselSection from '../../../components/shared/CarouselSection';
+import Container from '../../../components/ui/Container';
+import { categories } from '../../../data/categoriesData';
+
+const CategorySection = () => {
+  return (
+    <section className="bg-[#FFFFFF] py-20">
+      <Container>
+        <CarouselSection
+          items={categories}
+          renderItem={(item) => (
+            <CategoryCard image={item.image} title={item.title} />
+          )}
+        />
+      </Container>
+    </section>
+  );
+};
+
+export default CategorySection;

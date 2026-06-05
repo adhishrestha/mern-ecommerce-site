@@ -1,4 +1,4 @@
-import { assets } from '../../assets/data/assets';
+import { assets } from '../assets/data/assets';
 
 export const products = [
   {

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { assets } from '../../assets/data/assets';
-import Button from '../../components/ui/Button';
-import HeroLayout from '../../components/layout/Hero/HeroLayout';
-import HeroCard from '../../components/layout/Hero/HeroCard';
+import { assets } from '../../../assets/data/assets';
+import Button from '../../../components/ui/Button';
+import HeroLayout from '../../../components/layout/Hero/HeroLayout';
+import HeroCard from '../../../components/layout/Hero/HeroCard';
 
 const Hero = () => {
   return (

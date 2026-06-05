@@ -1,7 +1,7 @@
 import React from 'react';
-import SplitSection from '../../components/shared/SplitSection';
-import { assets } from '../../assets/data/assets';
-import SectionHeader from '../../components/shared/SectionHeader';
+import SplitSection from '../../../components/shared/SplitSection';
+import { assets } from '../../../assets/data/assets';
+import SectionHeader from '../../../components/shared/SectionHeader';
 
 const BlogSection = () => {
   return (

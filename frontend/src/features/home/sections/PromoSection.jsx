@@ -1,6 +1,6 @@
 import React from 'react';
-import SplitSection from '../../components/shared/SplitSection';
-import { assets } from '../../assets/data/assets';
+import SplitSection from '../../../components/shared/SplitSection';
+import { assets } from '../../../assets/data/assets';
 
 const PromoSection = () => {
   return (

@@ -1,13 +1,13 @@
 import React from 'react';
 import Container from '../components/ui/Container';
-import HeroSection from '../sections/home/HeroSection';
-import CategorySection from '../sections/home/CategorySection';
-import PromoSection from '../sections/home/PromoSection';
-import BestSellerSection from '../sections/home/BestSellerSection';
-import AboutSection from '../sections/home/AboutSection';
-import NewArrivalSection from '../sections/home/NewArrivalSection';
-import BlogSection from '../sections/home/BlogSection';
-import NewsLetterSection from '../sections/home/NewsLetterSection';
+import HeroSection from '../features/home/sections/HeroSection';
+import CategorySection from '../features/home/sections/CategorySection';
+import PromoSection from '../features/home/sections/PromoSection';
+import BestSellerSection from '../features/home/sections/BestSellerSection';
+import AboutSection from '../features/home/sections/AboutSection';
+import NewArrivalSection from '../features/home/sections/NewArrivalSection';
+import BlogSection from '../features/home/sections/BlogSection';
+import NewsLetterSection from '../features/home/sections/NewsLetterSection';
 
 const Home = () => {
   return (
