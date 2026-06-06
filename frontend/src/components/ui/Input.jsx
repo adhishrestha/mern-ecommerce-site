@@ -24,7 +24,7 @@ const Input = ({
       placeholder={placeholder}
       value={value}
       onChange={onChange}
-      className={`w-full text-base leading-6 font-normal tracking-normal ${variants[variant]} ${className} `}
+      className={`w-full text-base leading-6 font-normal tracking-normal outline-none ${variants[variant]} ${className} `}
       {...props}
     />
   );
