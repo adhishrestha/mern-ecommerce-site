@@ -6,8 +6,8 @@ const cn = (...inputs) => twMerge(clsx(inputs));
 
 const Button = ({
   children,
-  variant = 'primary',
-  size = 'md',
+  variant = '',
+  size = '',
   icon: Icon,
   iconPosition = 'right',
   loading = false,
