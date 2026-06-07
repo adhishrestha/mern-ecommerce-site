@@ -3,18 +3,30 @@ import Container from '../components/ui/Container';
 import Breadcrumb from '../components/navigation/Breadcrumb';
 import ShopToolbar from '../features/shop/components/ShopToolbar';
 import { products } from '../data/productData';
+import FilterSidebar from '../features/shop/components/sidebar/FilterSidebar';
+import MobileFilterDrawer from '../features/shop/components/mobile/MobileFilterDrawer';
 
 const Shop = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [sortBy, setSortBy] = useState('default');
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   const productsPerPage = 9;
-  const totalProducts = products.length;
 
-  const startItem = (currentPage - 1) * productsPerPage + 1;
+  const filteredProducts = products; // future filters
 
-  const endItem = Math.min(currentPage * productsPerPage, totalProducts);
+  const sortedProducts = [...filteredProducts];
+
+  const startIndex = (currentPage - 1) * productsPerPage;
+  const endIndex = startIndex + productsPerPage;
+
+  const currentProducts = sortedProducts.slice(startIndex, endIndex);
+
+  const totalProducts = sortedProducts.length;
+  const totalPages = Math.ceil(totalProducts / productsPerPage);
+
+  const startItem = totalProducts ? startIndex + 1 : 0;
+  const endItem = Math.min(endIndex, totalProducts);
   return (
     <Container>
       <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Shop' }]} />
@@ -25,8 +37,23 @@ const Shop = () => {
         totalProducts={products.length}
         sortBy={sortBy}
         onSortChange={(e) => setSortBy(e.target.value)}
-        onFilterClick={() => setIsSidebarOpen(true)}
+        onFilterClick={() => setIsFilterOpen(true)}
       />
+
+      {/* Shop Content */}
+      <div className="flex gap-10">
+        {/* Desktop Sidebar */}
+        <div className="hidden lg:block">
+          <FilterSidebar />
+        </div>
+        {/* Mobile Drawer */}
+        <MobileFilterDrawer
+          isOpen={isFilterOpen}
+          onClose={() => setIsFilterOpen(false)}
+        >
+          <FilterSidebar />
+        </MobileFilterDrawer>
+      </div>
     </Container>
   );
 };
