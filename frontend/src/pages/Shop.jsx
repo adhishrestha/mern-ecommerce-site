@@ -5,6 +5,8 @@ import ShopToolbar from '../features/shop/components/ShopToolbar';
 import { products } from '../data/productData';
 import FilterSidebar from '../features/shop/components/sidebar/FilterSidebar';
 import MobileFilterDrawer from '../features/shop/components/mobile/MobileFilterDrawer';
+import ProductGrid from '../components/product/ProductGrid';
+import Pagination from '../features/shop/components/Pagination';
 
 const Shop = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -53,6 +55,20 @@ const Shop = () => {
         >
           <FilterSidebar />
         </MobileFilterDrawer>
+
+        {/* Product Area */}
+        <div className="flex-1">
+          <ProductGrid
+            products={currentProducts}
+            gridClass="grid-cols-2 lg:grid-cols-3"
+          />
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
+            className="lg:justify-end"
+          />
+        </div>
       </div>
     </Container>
   );
