@@ -38,7 +38,7 @@ const ShopToolbar = ({
   return (
     <section aria-label="Shop controls" className="mt-10 pb-8">
       {/* Mobile Layout */}
-      <div className="flex items-center justify-between gap-4 md:hidden">
+      <div className="flex items-center justify-between gap-4 lg:hidden">
         <Button
           icon={ListFilter}
           iconPosition="left"
@@ -58,12 +58,12 @@ const ShopToolbar = ({
       </div>
 
       {/* Mobile Item Count */}
-      <p className="text-brand-dark mt-4 text-sm font-semibold md:hidden">
+      <p className="text-brand-dark mt-4 text-sm font-semibold lg:hidden">
         Showing {startItem}-{endItem} of {totalProducts} results
       </p>
 
       {/* Desktop Layout */}
-      <div className="hidden items-center justify-between md:flex">
+      <div className="hidden items-center justify-between lg:flex">
         <p className="text-brand-dark text-sm font-semibold">
           Showing {startItem}-{endItem} of {totalProducts} results
         </p>

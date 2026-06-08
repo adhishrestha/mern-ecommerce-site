@@ -1,14 +1,24 @@
 import React from 'react';
 import { X } from 'lucide-react';
+import useBodyScrollLock from '../../../../hooks/useBodyScrollLock';
+import useEscapeKey from '../../../../hooks/useEscapeKey';
 
 const MobileFilterDrawer = ({ isOpen, onClose, children }) => {
+  useBodyScrollLock(isOpen);
+  useEscapeKey(() => {
+    if (isOpen) {
+      onClose();
+    }
+  });
   return (
     <>
       {/* Backdrop */}
       <div
         onClick={onClose}
         className={`fixed inset-0 z-40 bg-black/50 transition-opacity duration-300 lg:hidden ${
-          isOpen ? 'visible opacity-100' : 'invisible opacity-0'
+          isOpen
+            ? 'opacity-100 backdrop-blur-sm'
+            : 'pointer-events-none opacity-0'
         }`}
         aria-hidden="true"
       />
