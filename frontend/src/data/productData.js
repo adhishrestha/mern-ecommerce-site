@@ -17,7 +17,7 @@ export const products = [
   {
     id: 2,
     name: 'Porcelain Dinner Plate',
-    slug: 'Porcelain Dinner Plate',
+    slug: 'Porcelain-Dinner-Plate',
     price: '49.00',
     image: assets.p_img2,
     description: 'Lorem ipsum dolor sit amet conse bolli tetur.',
@@ -28,7 +28,7 @@ export const products = [
   {
     id: 3,
     name: 'Warrick White Vase 20',
-    slug: 'Warrick White Vase 20',
+    slug: 'Warrick-White-Vase-20',
     price: '49.00',
     image: assets.p_img3,
     description:
@@ -40,7 +40,7 @@ export const products = [
   {
     id: 4,
     name: 'Marin White Dinner Plate',
-    slug: 'Marin White Dinner Plate',
+    slug: 'Marin-White-Dinner-Plate',
     price: '49.00',
     image: assets.p_img4,
     description: 'Lorem ipsum dolor sit amet conse.',
@@ -51,7 +51,7 @@ export const products = [
   {
     id: 5,
     name: 'Tall Cream Ceramic Vase',
-    slug: 'Tall Cream Ceramic Vase',
+    slug: 'Tall-Cream-Ceramic-Vase',
     price: '49.00',
     image: assets.p_img5,
     description:
@@ -63,11 +63,12 @@ export const products = [
   {
     id: 6,
     name: 'Luana Bowl',
-    slug: 'Luana Bowl',
+    slug: 'Luana-Bowl',
     price: '49.00',
     image: assets.p_img6,
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.',
+
     category: 'bowl',
     isBestSeller: true,
     createdAt: '2026-05-23',
@@ -75,10 +76,11 @@ export const products = [
   {
     id: 7,
     name: 'Ophelia Matte Natural  Vase',
-    slug: 'Ophelia Matte Natural  Vase',
+    slug: 'Ophelia-Matte-Natural -Vase',
     price: '49.00',
     image: assets.p_img7,
     description: 'Lorem ipsum dolor sit amet conse bolli tetur.',
+
     category: 'vase',
     isBestSeller: false,
     createdAt: '2026-05-28',
@@ -86,7 +88,7 @@ export const products = [
   {
     id: 8,
     name: 'Luana Bowl',
-    slug: 'Luana Bowl',
+    slug: 'Luana-Bowl',
     price: '49.00',
     image: assets.p_img8,
     description: 'Lorem ipsum dolor sit amet conse.',
@@ -97,7 +99,7 @@ export const products = [
   {
     id: 9,
     name: 'Porcelain Dinner Plate',
-    slug: 'Porcelain Dinner Plate',
+    slug: 'Porcelain-Dinner-Plate',
     price: '49.00',
     image: assets.p_img9,
     description:
@@ -109,7 +111,7 @@ export const products = [
   {
     id: 10,
     name: 'Porcelain Dinner Plate',
-    slug: 'Porcelain Dinner Plate',
+    slug: 'Porcelain-Dinner-Plate',
     price: '49.00',
     image: assets.p_img10,
     description:
@@ -121,7 +123,7 @@ export const products = [
   {
     id: 11,
     name: 'Warrick White Vase 14',
-    slug: 'Warrick White Vase 14',
+    slug: 'Warrick-White-Vase-14',
     price: '49.00',
     image: assets.p_img11,
     description:
@@ -133,7 +135,7 @@ export const products = [
   {
     id: 12,
     name: 'Rounded Dual Handled Vase',
-    slug: 'Rounded Dual Handled  Vase',
+    slug: 'Rounded-Dual-Handled -Vase',
     price: '49.00',
     image: assets.p_img12,
     description:

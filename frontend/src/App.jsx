@@ -4,6 +4,7 @@ import MainLayout from './layouts/MainLayout';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Shop from './pages/Shop';
+import ProductDetailsPage from './pages/ProductDetailsPage';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="*" element={<NotFound />} />
         <Route path="shop" element={<Shop />} />
+        <Route path="products/:id/:slug" element={<ProductDetailsPage />} />
       </Route>
     </Routes>
   );

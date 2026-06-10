@@ -9,7 +9,7 @@ const ProductCard = ({ product }) => {
     <article className="group flex h-full flex-col">
       {/* PRODUCT IMAGE */}
       <Link
-        to={`/products/${product.slug}`}
+        to={`/products/${product.id}/${product.slug}`}
         className="aspect-4/5 overflow-hidden bg-[#FFFFFF]"
       >
         <img
@@ -23,7 +23,9 @@ const ProductCard = ({ product }) => {
       {/* PRODUCT CONTENT */}
       <div className="flex flex-1 flex-col pt-6">
         <h3 className="line-clamp-2 text-sm font-semibold tracking-[0.06em] text-[#3D3D4E] uppercase transition-colors duration-300 hover:text-[#000]">
-          <Link to={`/products/${product.slug}`}>{product.name}</Link>
+          <Link to={`/products/${product.id}/${product.slug}`}>
+            {product.name}
+          </Link>
         </h3>
 
         <p className="mt-2 text-sm leading-5 font-semibold text-[#3A3845]">
