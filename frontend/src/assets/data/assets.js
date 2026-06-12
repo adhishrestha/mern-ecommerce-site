@@ -10,9 +10,14 @@ import promo_img from '../images/promo-img.webp';
 
 // Products Images
 import p_img1 from '../images/products/p_img1.webp';
+import p_img1_1 from '../images/products/p_img1_1.webp';
 import p_img2 from '../images/products/p_img2.webp';
 import p_img3 from '../images/products/p_img3.webp';
 import p_img4 from '../images/products/p_img4.webp';
+import p_img4_1 from '../images/products/p_img4_1.webp';
+import p_img4_2 from '../images/products/p_img4_2.webp';
+import p_img4_3 from '../images/products/p_img4_3.webp';
+import p_img4_4 from '../images/products/p_img4_4.webp';
 import p_img5 from '../images/products/p_img5.webp';
 import p_img6 from '../images/products/p_img6.webp';
 import p_img7 from '../images/products/p_img7.webp';
@@ -40,9 +45,14 @@ export const assets = {
   category_4,
   promo_img,
   p_img1,
+  p_img1_1,
   p_img2,
   p_img3,
   p_img4,
+  p_img4_1,
+  p_img4_2,
+  p_img4_3,
+  p_img4_4,
   p_img5,
   p_img6,
   p_img7,

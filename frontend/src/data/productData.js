@@ -6,7 +6,34 @@ export const products = [
     name: 'Small Ecru Ceramic Compote',
     slug: 'small-ecru-ceramic-compote',
     price: '49.00',
-    image: assets.p_img1,
+    comparePrice: 69,
+    images: [assets.p_img1, assets.p_img1_1],
+    rating: 3.9,
+    reviewCount: 127,
+    isInStock: true,
+    colors: [
+      {
+        name: 'Sage',
+        value: '#A1B8BE',
+      },
+      {
+        name: 'White',
+        value: '#FFFFFF',
+      },
+      {
+        name: 'Terracotta',
+        value: '#C88242',
+      },
+      {
+        name: 'Rose',
+        value: '#DCB9A8',
+      },
+      {
+        name: 'Blue',
+        value: '#758EBD',
+      },
+    ],
+
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit.',
     category: 'ceramic',
@@ -19,7 +46,7 @@ export const products = [
     name: 'Porcelain Dinner Plate',
     slug: 'Porcelain-Dinner-Plate',
     price: '49.00',
-    image: assets.p_img2,
+    images: [assets.p_img2],
     description: 'Lorem ipsum dolor sit amet conse bolli tetur.',
     category: 'dinnerware',
     isBestSeller: true,
@@ -30,7 +57,7 @@ export const products = [
     name: 'Warrick White Vase 20',
     slug: 'Warrick-White-Vase-20',
     price: '49.00',
-    image: assets.p_img3,
+    images: [assets.p_img3],
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.',
     category: 'vase',
@@ -42,7 +69,39 @@ export const products = [
     name: 'Marin White Dinner Plate',
     slug: 'Marin-White-Dinner-Plate',
     price: '49.00',
-    image: assets.p_img4,
+    comparePrice: 69,
+    rating: 3.9,
+    reviewCount: 127,
+    isInStock: true,
+    colors: [
+      {
+        name: 'Blue',
+        value: '#758EBD',
+      },
+      {
+        name: 'White',
+        value: '#FFFFFF',
+      },
+      {
+        name: 'Terracotta',
+        value: '#C88242',
+      },
+      {
+        name: 'Rose',
+        value: '#DCB9A8',
+      },
+      {
+        name: 'Sage',
+        value: '#A1B8BE',
+      },
+    ],
+    images: [
+      assets.p_img4,
+      assets.p_img4_1,
+      assets.p_img4_2,
+      assets.p_img4_3,
+      assets.p_img4_4,
+    ],
     description: 'Lorem ipsum dolor sit amet conse.',
     category: 'dinnerware',
     isBestSeller: true,
@@ -53,7 +112,7 @@ export const products = [
     name: 'Tall Cream Ceramic Vase',
     slug: 'Tall-Cream-Ceramic-Vase',
     price: '49.00',
-    image: assets.p_img5,
+    images: [assets.p_img5],
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit.',
     category: 'vase',
@@ -65,7 +124,7 @@ export const products = [
     name: 'Luana Bowl',
     slug: 'Luana-Bowl',
     price: '49.00',
-    image: assets.p_img6,
+    images: [assets.p_img6],
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.',
 
@@ -78,7 +137,7 @@ export const products = [
     name: 'Ophelia Matte Natural  Vase',
     slug: 'Ophelia-Matte-Natural -Vase',
     price: '49.00',
-    image: assets.p_img7,
+    images: [assets.p_img7],
     description: 'Lorem ipsum dolor sit amet conse bolli tetur.',
 
     category: 'vase',
@@ -90,7 +149,7 @@ export const products = [
     name: 'Luana Bowl',
     slug: 'Luana-Bowl',
     price: '49.00',
-    image: assets.p_img8,
+    images: [assets.p_img8],
     description: 'Lorem ipsum dolor sit amet conse.',
     category: 'bowl',
     isBestSeller: false,
@@ -101,7 +160,7 @@ export const products = [
     name: 'Porcelain Dinner Plate',
     slug: 'Porcelain-Dinner-Plate',
     price: '49.00',
-    image: assets.p_img9,
+    images: [assets.p_img9],
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.',
     category: 'dinnerware',
@@ -113,7 +172,7 @@ export const products = [
     name: 'Porcelain Dinner Plate',
     slug: 'Porcelain-Dinner-Plate',
     price: '49.00',
-    image: assets.p_img10,
+    images: [assets.p_img10],
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.',
     category: 'dinnerware',
@@ -125,7 +184,7 @@ export const products = [
     name: 'Warrick White Vase 14',
     slug: 'Warrick-White-Vase-14',
     price: '49.00',
-    image: assets.p_img11,
+    images: [assets.p_img11],
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.',
     category: 'vase',
@@ -137,7 +196,7 @@ export const products = [
     name: 'Rounded Dual Handled Vase',
     slug: 'Rounded-Dual-Handled -Vase',
     price: '49.00',
-    image: assets.p_img12,
+    images: [assets.p_img12],
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.',
     category: 'vase',
