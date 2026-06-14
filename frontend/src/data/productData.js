@@ -7,7 +7,7 @@ export const products = [
     slug: 'small-ecru-ceramic-compote',
     price: '49.00',
     comparePrice: 69,
-    images: [assets.p_img1, assets.p_img1_1],
+    images: [assets.p_img1, assets.p_img1_1, assets.p_img1_2, assets.p_img1_3],
     rating: 3.9,
     reviewCount: 127,
     isInStock: true,

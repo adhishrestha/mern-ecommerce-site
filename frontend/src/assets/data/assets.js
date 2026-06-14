@@ -11,6 +11,8 @@ import promo_img from '../images/promo-img.webp';
 // Products Images
 import p_img1 from '../images/products/p_img1.webp';
 import p_img1_1 from '../images/products/p_img1_1.webp';
+import p_img1_2 from '../images/products/p_img1_2.webp';
+import p_img1_3 from '../images/products/p_img1_3.webp';
 import p_img2 from '../images/products/p_img2.webp';
 import p_img3 from '../images/products/p_img3.webp';
 import p_img4 from '../images/products/p_img4.webp';
@@ -46,6 +48,8 @@ export const assets = {
   promo_img,
   p_img1,
   p_img1_1,
+  p_img1_2,
+  p_img1_3,
   p_img2,
   p_img3,
   p_img4,

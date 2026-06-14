@@ -15,7 +15,7 @@ const ProductThumbnailList = ({
           <button
             key={index}
             onClick={() => onSelectImage(img)}
-            className={`relative h-16 w-16 flex-shrink-0 overflow-hidden border transition-all duration-200 ${
+            className={`relative h-16 w-16 shrink-0 overflow-hidden border transition-all duration-200 ${
               isActive
                 ? 'border-black/40 ring-1 ring-black'
                 : 'border-gray-200 hover:border-gray-400'
