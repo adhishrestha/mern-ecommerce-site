@@ -11,7 +11,10 @@ const ProductInfo = ({ product }) => {
   return (
     <div>
       <ProductHeader product={product} />
-      <ProductPrice />
+      <ProductPrice
+        price={Number(product.price)}
+        comparePrice={Number(product.comparePrice)}
+      />
       <ColorSelector />
       <QuantitySelector />
       <ProductAction />
