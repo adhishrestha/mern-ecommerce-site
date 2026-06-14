@@ -7,10 +7,10 @@ import ProductAction from './ProductAction';
 import SocialShare from './SocialShare';
 import ProductAccordion from '../accordion/ProductAccordion';
 
-const ProductInfo = () => {
+const ProductInfo = ({ product }) => {
   return (
     <div>
-      <ProductHeader />
+      <ProductHeader product={product} />
       <ProductPrice />
       <ColorSelector />
       <QuantitySelector />
