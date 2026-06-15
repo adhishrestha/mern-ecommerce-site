@@ -7,6 +7,28 @@ import SocialShare from './SocialShare';
 import ProductAccordion from '../accordion/ProductAccordion';
 
 const ProductInfo = ({ product }) => {
+  if (!product) return null;
+
+  const accordionItems = [
+    {
+      title: 'Description',
+      content: product.description,
+    },
+    {
+      title: 'Dimensions',
+      content: (
+        <ul className="space-y-1">
+          <li>Height: 10 cm</li>
+          <li>Width: 20 cm</li>
+          <li>Weight: 500 g</li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Reviews',
+      content: 'No reviews yet.',
+    },
+  ];
   return (
     <div>
       <ProductHeader product={product} />
@@ -17,7 +39,7 @@ const ProductInfo = ({ product }) => {
       <ColorSelector colors={product.colors} />
       <ProductAction />
       <SocialShare />
-      <ProductAccordion />
+      <ProductAccordion items={accordionItems} />
     </div>
   );
 };
