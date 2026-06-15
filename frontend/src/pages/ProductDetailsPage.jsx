@@ -6,10 +6,12 @@ import { products } from '../data/productData';
 import ProductGallery from '../features/product-details/components/gallery/ProductGallery';
 import ProductInfo from '../features/product-details/components/info/ProductInfo';
 import SimilarProductsSection from '../features/product-details/components/sections/SimilarProductsSection';
+import { getSimilarProducts } from '../features/product-details/utils/getSimilarProducts';
 
 const ProductDetailsPage = () => {
   const { id, slug } = useParams();
   const product = products.find((item) => item.id === Number(id));
+  const similarProducts = getSimilarProducts(products, product);
 
   if (!product) {
     return (
@@ -37,7 +39,7 @@ const ProductDetailsPage = () => {
         <ProductGallery product={product} />
         <ProductInfo product={product} />
       </section>
-      <SimilarProductsSection />
+      <SimilarProductsSection products={similarProducts} />
     </Container>
   );
 };
