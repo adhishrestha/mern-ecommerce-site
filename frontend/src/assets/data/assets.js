@@ -28,6 +28,8 @@ import p_img9 from '../images/products/p_img9.webp';
 import p_img10 from '../images/products/p_img10.webp';
 import p_img11 from '../images/products/p_img11.webp';
 import p_img12 from '../images/products/p_img12.webp';
+import p_img13 from '../images/products/p_img13.webp';
+import p_img14 from '../images/products/p_img14.webp';
 
 //About Images
 import about_img1 from '../images/about/about-img1-home-sec.webp';
@@ -65,6 +67,9 @@ export const assets = {
   p_img10,
   p_img11,
   p_img12,
+  p_img13,
+  p_img14,
+
   about_img1,
   about_img2,
   blog_img1,

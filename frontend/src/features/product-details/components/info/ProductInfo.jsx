@@ -14,7 +14,7 @@ const ProductInfo = ({ product }) => {
         price={Number(product.price)}
         comparePrice={Number(product.comparePrice)}
       />
-      <ColorSelector />
+      <ColorSelector colors={product.colors} />
       <ProductAction />
       <SocialShare />
       <ProductAccordion />

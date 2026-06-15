@@ -48,6 +48,24 @@ export const products = [
     price: '49.00',
     images: [assets.p_img2],
     description: 'Lorem ipsum dolor sit amet conse bolli tetur.',
+    rating: 3.4,
+    reviewCount: 17,
+    isInStock: false,
+    colors: [
+      {
+        name: 'White',
+        value: '#FFFFFF',
+      },
+
+      {
+        name: 'Rose',
+        value: '#DCB9A8',
+      },
+      {
+        name: 'Blue',
+        value: '#758EBD',
+      },
+    ],
     category: 'dinnerware',
     isBestSeller: true,
     createdAt: '2026-05-20',
@@ -58,6 +76,27 @@ export const products = [
     slug: 'Warrick-White-Vase-20',
     price: '49.00',
     images: [assets.p_img3],
+    rating: 5,
+    reviewCount: 1107,
+    isInStock: false,
+    colors: [
+      {
+        name: 'Sage',
+        value: '#A1B8BE',
+      },
+      {
+        name: 'White',
+        value: '#FFFFFF',
+      },
+      {
+        name: 'Rose',
+        value: '#DCB9A8',
+      },
+      {
+        name: 'Blue',
+        value: '#758EBD',
+      },
+    ],
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.',
     category: 'vase',
@@ -202,5 +241,48 @@ export const products = [
     category: 'vase',
     isBestSeller: true,
     createdAt: '2026-05-17',
+  },
+  {
+    id: 13,
+    name: 'Rounded Dual Handled Vase',
+    slug: 'Rounded-Dual-Handled -Vase',
+    price: '49.00',
+    images: [assets.p_img13],
+    description:
+      'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.',
+    category: 'vase',
+    isBestSeller: false,
+    createdAt: '2026-06-15',
+  },
+  {
+    id: 14,
+    name: 'Small Ecru Ceramic Compote',
+    slug: 'small-ecru-ceramic-compote',
+    price: '49.00',
+    comparePrice: 69,
+    images: [assets.p_img14],
+    rating: 3,
+    reviewCount: 12,
+    isInStock: true,
+    colors: [
+      {
+        name: 'Terracotta',
+        value: '#C88242',
+      },
+      {
+        name: 'Rose',
+        value: '#DCB9A8',
+      },
+      {
+        name: 'Blue',
+        value: '#758EBD',
+      },
+    ],
+
+    description:
+      'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit.',
+    category: 'ceramic',
+    isBestSeller: false,
+    createdAt: '2026-05-22',
   },
 ];
