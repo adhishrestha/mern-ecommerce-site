@@ -2,22 +2,39 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-const CarouselSection = ({ items, renderItem, slidesPerView = 4 }) => {
+const CarouselSection = ({
+  items,
+  renderItem,
+  slidesPerView = 4,
+  autoplay = false,
+  pagination = false,
+}) => {
   return (
     <Swiper
       modules={[Navigation, Pagination, Autoplay]}
-      autoplay={{
-        delay: 3000,
-        disableOnInteraction: false,
-      }}
+      autoplay={
+        autoplay
+          ? {
+              delay: 3000,
+              disableOnInteraction: false,
+            }
+          : false
+      }
       loop={true}
       speed={800}
-      // navigation
-      pagination={{
-        clickable: true,
+      pagination={
+        pagination
+          ? {
+              clickable: true,
+            }
+          : false
+      }
+      navigation={{
+        prevEl: '.custom-prev',
+        nextEl: '.custom-next',
       }}
       grabCursor={true}
-      spaceBetween={24}
+      spaceBetween={20}
       breakpoints={{
         0: {
           slidesPerView: 1.2,
@@ -37,8 +54,8 @@ const CarouselSection = ({ items, renderItem, slidesPerView = 4 }) => {
       }}
       className="category-swiper pb-20"
     >
-      {items.map((item, index) => (
-        <SwiperSlide key={index}>{renderItem(item)}</SwiperSlide>
+      {items.map((item) => (
+        <SwiperSlide key={item.id}>{renderItem(item)}</SwiperSlide>
       ))}
     </Swiper>
   );
