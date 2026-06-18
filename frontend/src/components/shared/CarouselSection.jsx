@@ -8,6 +8,7 @@ const CarouselSection = ({
   slidesPerView = 4,
   autoplay = false,
   pagination = false,
+  className = '',
 }) => {
   return (
     <Swiper
@@ -52,7 +53,7 @@ const CarouselSection = ({
           slidesPerView,
         },
       }}
-      className="category-swiper pb-20"
+      className={`${className}`}
     >
       {items.map((item) => (
         <SwiperSlide key={item.id}>{renderItem(item)}</SwiperSlide>

@@ -10,7 +10,9 @@ const BestSellerSection = () => {
     <>
       <section className="w-full py-20">
         <Container>
-          <SectionHeader title="Best sellers" />
+          <div className="mb-12">
+            <SectionHeader title="Best sellers" />
+          </div>
           <ProductGrid
             products={bestSeller}
             gridClass="grid-cols-2 md:grid-cols-3 lg:grid-cols-4"

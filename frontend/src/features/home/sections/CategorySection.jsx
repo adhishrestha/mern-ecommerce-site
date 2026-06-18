@@ -12,6 +12,9 @@ const CategorySection = () => {
           renderItem={(item) => (
             <CategoryCard image={item.image} title={item.title} />
           )}
+          pagination
+          autoplay
+          className="category-swiper pb-20"
         />
       </Container>
     </section>

@@ -10,7 +10,9 @@ const NewArrivalSection = () => {
   return (
     <section className="w-full py-20">
       <Container>
-        <SectionHeader title="Discover new arrivals" />
+        <div className="mb-12">
+          <SectionHeader title="Discover new arrivals" />
+        </div>
         <ProductGrid
           products={newArrivals}
           gridClass="grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
