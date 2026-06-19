@@ -12,7 +12,7 @@ const ProductAccordionItem = ({ id, title, children, isOpen, onToggle }) => {
         aria-controls={`${id}-panel`}
         id={`${id}-button`}
       >
-        <h3 className="text-base font-medium text-[#3A3845]">{title}</h3>
+        <h2 className="text-base font-medium text-[#3A3845]">{title}</h2>
 
         <div className="relative h-4.5 w-4.5">
           <Plus

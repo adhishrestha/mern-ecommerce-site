@@ -15,7 +15,7 @@ const ProductHeader = ({ product }) => {
       <div className="flex gap-10">
         {/* Rating Component */}
         <ProductRating rating={rating} reviewCount={reviewCount} />
-        <span className={isInStock ? 'text-green-600' : 'text-red-500'}>
+        <span className={isInStock ? 'text-green-600' : 'text-red-700'}>
           {isInStock ? 'In Stock' : 'Out of Stock'}
         </span>
       </div>
