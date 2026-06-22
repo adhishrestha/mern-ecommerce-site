@@ -40,12 +40,13 @@ export const products = [
     isBestSeller: true,
     createdAt: '2026-05-22',
   },
-
   {
     id: 2,
     name: 'Porcelain Dinner Plate',
     slug: 'Porcelain-Dinner-Plate',
     price: '49.00',
+    comparePrice: 79,
+    reciewCount: 0,
     images: [assets.p_img2],
     description: 'Lorem ipsum dolor sit amet conse bolli tetur.',
     rating: 3.4,
@@ -75,6 +76,7 @@ export const products = [
     name: 'Warrick White Vase 20',
     slug: 'Warrick-White-Vase-20',
     price: '49.00',
+    comparePrice: null,
     images: [assets.p_img3],
     rating: 5,
     reviewCount: 1107,
@@ -125,10 +127,7 @@ export const products = [
         name: 'Terracotta',
         value: '#C88242',
       },
-      {
-        name: 'Rose',
-        value: '#DCB9A8',
-      },
+
       {
         name: 'Sage',
         value: '#A1B8BE',
@@ -148,9 +147,20 @@ export const products = [
   },
   {
     id: 5,
-    name: 'Tall Cream Ceramic Vase',
-    slug: 'Tall-Cream-Ceramic-Vase',
+    name: 'Tall Cream Vase',
+    slug: 'Tall-Cream-Vase',
     price: '49.00',
+    comparePrice: null,
+    colors: [
+      {
+        name: 'White',
+        value: '#FFFFFF',
+      },
+      {
+        name: 'Terracotta',
+        value: '#C88242',
+      },
+    ],
     images: [assets.p_img5],
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit.',
@@ -163,7 +173,25 @@ export const products = [
     name: 'Luana Bowl',
     slug: 'Luana-Bowl',
     price: '49.00',
+    comparePrice: null,
     images: [assets.p_img6],
+    rating: 0,
+    reviewCount: 0,
+    colors: [
+      {
+        name: 'Sage',
+        value: '#A1B8BE',
+      },
+      {
+        name: 'White',
+        value: '#FFFFFF',
+      },
+      {
+        name: 'Blue',
+        value: '#758EBD',
+      },
+    ],
+    isInStock: true,
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.',
 
@@ -176,7 +204,17 @@ export const products = [
     name: 'Ophelia Matte Natural  Vase',
     slug: 'Ophelia-Matte-Natural -Vase',
     price: '49.00',
+    comparePrice: null,
     images: [assets.p_img7],
+    rating: 4.4,
+    reviewCount: 200,
+    isInStock: false,
+    colors: [
+      {
+        name: 'White',
+        value: '#FFFFFF',
+      },
+    ],
     description: 'Lorem ipsum dolor sit amet conse bolli tetur.',
 
     category: 'vase',
@@ -188,7 +226,25 @@ export const products = [
     name: 'Luana Bowl',
     slug: 'Luana-Bowl',
     price: '49.00',
+    comparePrice: null,
     images: [assets.p_img8],
+    rating: 3.6,
+    reviewCount: 97,
+    isInStock: true,
+    colors: [
+      {
+        name: 'Sage',
+        value: '#A1B8BE',
+      },
+      {
+        name: 'White',
+        value: '#FFFFFF',
+      },
+      {
+        name: 'Terracotta',
+        value: '#C88242',
+      },
+    ],
     description: 'Lorem ipsum dolor sit amet conse.',
     category: 'bowl',
     isBestSeller: false,
@@ -199,7 +255,29 @@ export const products = [
     name: 'Porcelain Dinner Plate',
     slug: 'Porcelain-Dinner-Plate',
     price: '49.00',
+    comparePrice: 65,
     images: [assets.p_img9],
+    rating: 4.6,
+    reviewCount: 123,
+    isInStock: true,
+    colors: [
+      {
+        name: 'Sage',
+        value: '#A1B8BE',
+      },
+      {
+        name: 'Terracotta',
+        value: '#C88242',
+      },
+      {
+        name: 'Rose',
+        value: '#DCB9A8',
+      },
+      {
+        name: 'Blue',
+        value: '#758EBD',
+      },
+    ],
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.',
     category: 'dinnerware',
@@ -211,7 +289,29 @@ export const products = [
     name: 'Porcelain Dinner Plate',
     slug: 'Porcelain-Dinner-Plate',
     price: '49.00',
+    comparePrice: 86,
     images: [assets.p_img10],
+    rating: 5,
+    reviewCount: 1027,
+    isInStock: true,
+    colors: [
+      {
+        name: 'Sage',
+        value: '#A1B8BE',
+      },
+      {
+        name: 'Terracotta',
+        value: '#C88242',
+      },
+      {
+        name: 'Rose',
+        value: '#DCB9A8',
+      },
+      {
+        name: 'Blue',
+        value: '#758EBD',
+      },
+    ],
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.',
     category: 'dinnerware',
@@ -223,7 +323,12 @@ export const products = [
     name: 'Warrick White Vase 14',
     slug: 'Warrick-White-Vase-14',
     price: '49.00',
+    comparePrice: null,
     images: [assets.p_img11],
+    rating: 0,
+    reviewCount: 0,
+    isInStock: false,
+    colors: [],
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.',
     category: 'vase',
@@ -235,7 +340,30 @@ export const products = [
     name: 'Rounded Dual Handled Vase',
     slug: 'Rounded-Dual-Handled -Vase',
     price: '49.00',
+    comparePrice: null,
     images: [assets.p_img12],
+    rating: 4.9,
+    reviewCount: 17,
+    isInStock: true,
+    colors: [
+      {
+        name: 'Sage',
+        value: '#A1B8BE',
+      },
+      {
+        name: 'White',
+        value: '#FFFFFF',
+      },
+
+      {
+        name: 'Rose',
+        value: '#DCB9A8',
+      },
+      {
+        name: 'Blue',
+        value: '#758EBD',
+      },
+    ],
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.',
     category: 'vase',
@@ -247,7 +375,25 @@ export const products = [
     name: 'Rounded Dual Handled Vase',
     slug: 'Rounded-Dual-Handled -Vase',
     price: '49.00',
+    comparePrice: null,
     images: [assets.p_img13],
+    rating: 5,
+    reviewCount: 1927,
+    isInStock: false,
+    colors: [
+      {
+        name: 'Sage',
+        value: '#A1B8BE',
+      },
+      {
+        name: 'White',
+        value: '#FFFFFF',
+      },
+      {
+        name: 'Terracotta',
+        value: '#C88242',
+      },
+    ],
     description:
       'Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.',
     category: 'vase',

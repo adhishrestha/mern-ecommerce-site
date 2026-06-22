@@ -1,6 +1,6 @@
 import React from 'react';
 import FilterSection from './FilterSection';
-import { colors } from '../../data/filterOptions';
+import { colors } from '../../../../data/filterOptions';
 
 const ColorFilter = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import FilterSection from './FilterSection';
-import { tags } from '../../data/filterOptions';
+import { tags } from '../../../../data/filterOptions';
 
 const TagFilter = () => {
   return (

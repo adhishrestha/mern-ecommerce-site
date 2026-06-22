@@ -1,6 +1,6 @@
 import React from 'react';
 import FilterSection from './FilterSection';
-import { priceRanges } from '../../data/filterOptions';
+import { priceRanges } from '../../../../data/filterOptions';
 
 const PriceFilter = () => {
   return (

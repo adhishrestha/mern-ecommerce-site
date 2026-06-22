@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Container from '../components/ui/Container';
 import Breadcrumb from '../components/navigation/Breadcrumb';
 import ShopToolbar from '../features/shop/components/ShopToolbar';
-import { products } from '../data/productData';
+import { products } from '../data/products';
 import FilterSidebar from '../features/shop/components/sidebar/FilterSidebar';
 import MobileFilterDrawer from '../features/shop/components/mobile/MobileFilterDrawer';
 import ProductGrid from '../components/product/ProductGrid';

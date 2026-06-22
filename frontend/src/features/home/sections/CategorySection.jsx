@@ -1,7 +1,7 @@
 import CategoryCard from '../../../components/cards/CategoryCard';
 import CarouselSection from '../../../components/shared/CarouselSection';
 import Container from '../../../components/ui/Container';
-import { categories } from '../../../data/categoriesData';
+import { categories } from '../../../data/homepageCategories';
 
 const CategorySection = () => {
   return (

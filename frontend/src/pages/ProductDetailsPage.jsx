@@ -2,7 +2,7 @@ import React from 'react';
 import Breadcrumb from '../components/navigation/Breadcrumb';
 import Container from '../components/ui/Container';
 import { Navigate, useParams } from 'react-router-dom';
-import { products } from '../data/productData';
+import { products } from '../data/products';
 import ProductGallery from '../features/product-details/components/gallery/ProductGallery';
 import ProductInfo from '../features/product-details/components/info/ProductInfo';
 import SimilarProductsSection from '../features/product-details/components/sections/SimilarProductsSection';

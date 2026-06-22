@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../../../components/ui/Container';
 import SectionHeader from '../../../components/shared/SectionHeader';
-import { products } from '../../../data/productData';
+import { products } from '../../../data/products';
 import ProductGrid from '../../../components/product/ProductGrid';
 import { getBestSeller } from '../../../utils/productUtils';
 const BestSellerSection = () => {

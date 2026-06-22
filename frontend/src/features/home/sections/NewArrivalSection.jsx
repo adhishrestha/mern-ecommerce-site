@@ -3,7 +3,7 @@ import Container from '../../../components/ui/Container';
 import SectionHeader from '../../../components/shared/SectionHeader';
 import ProductGrid from '../../../components/product/ProductGrid';
 import { getNewArrivals } from '../../../utils/productUtils';
-import { products } from '../../../data/productData';
+import { products } from '../../../data/products';
 
 const NewArrivalSection = () => {
   const newArrivals = getNewArrivals(products);

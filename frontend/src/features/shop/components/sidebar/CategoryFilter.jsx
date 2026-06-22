@@ -1,6 +1,6 @@
 import React from 'react';
 import FilterSection from './FilterSection';
-import { categories } from '../../data/filterOptions';
+import { categories } from '../../../../data/filterOptions';
 
 const CategoryFilter = () => {
   return (
