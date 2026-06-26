@@ -18,7 +18,7 @@ const ProductGallery = ({ product }) => {
   return (
     <div className="w-full space-y-4">
       {/* Main Image */}
-      <div className="aspect-4/5 w-full overflow-hidden">
+      <div className="aspect-auto w-full overflow-hidden">
         <Image
           src={selectedImage}
           alt={name ? `${name} product image` : 'Product image'}

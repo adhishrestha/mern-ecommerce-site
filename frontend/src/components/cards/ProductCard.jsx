@@ -22,17 +22,17 @@ const ProductCard = ({ product }) => {
 
       {/* PRODUCT CONTENT */}
       <div className="flex flex-1 flex-col pt-6">
-        <h3 className="line-clamp-2 text-sm font-semibold tracking-[0.06em] text-[#3D3D4E] uppercase transition-colors duration-300 hover:text-[#000]">
-          <Link to={`/products/${product.id}/${product.slug}`}>
+        <Link to={`/products/${product.id}/${product.slug}`}>
+          <h3 className="line-clamp-2 h-10 text-sm font-semibold tracking-[0.06em] text-[#3D3D4E] uppercase transition-colors duration-300 hover:text-[#000]">
             {product.name}
-          </Link>
-        </h3>
+          </h3>
+        </Link>
 
         <p className="mt-2 text-sm leading-5 font-semibold text-[#3A3845]">
           ${product.price}
         </p>
 
-        <p className="mt-2 line-clamp-1 text-sm leading-7 font-normal text-[#5A5A5A]">
+        <p className="mt-2 line-clamp-1 h-7 text-sm leading-7 font-normal text-[#5A5A5A]">
           {product.description}
         </p>
         <div className="mt-auto pt-6">
