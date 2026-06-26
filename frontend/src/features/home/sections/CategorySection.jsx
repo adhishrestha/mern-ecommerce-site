@@ -10,7 +10,11 @@ const CategorySection = () => {
         <CarouselSection
           items={categories}
           renderItem={(item) => (
-            <CategoryCard image={item.image} title={item.title} />
+            <CategoryCard
+              image={item.image}
+              title={item.title}
+              slug={item.slug}
+            />
           )}
           pagination
           autoplay

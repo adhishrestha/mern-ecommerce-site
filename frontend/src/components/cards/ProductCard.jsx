@@ -23,7 +23,7 @@ const ProductCard = ({ product }) => {
       {/* PRODUCT CONTENT */}
       <div className="flex flex-1 flex-col pt-6">
         <Link to={`/products/${product.id}/${product.slug}`}>
-          <h3 className="line-clamp-2 h-10 text-sm font-semibold tracking-[0.06em] text-[#3D3D4E] uppercase transition-colors duration-300 hover:text-[#000]">
+          <h3 className="line-clamp-2 h-10 text-sm font-semibold tracking-[0.06em] text-[#3D3D4E] uppercase transition-colors duration-300 hover:text-black">
             {product.name}
           </h3>
         </Link>

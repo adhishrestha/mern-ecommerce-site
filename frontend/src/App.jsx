@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Shop from './pages/Shop';
 import ProductDetailsPage from './pages/ProductDetailsPage';
+import CollectionPage from './pages/CollectionPage';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
         <Route path="shop" element={<Shop />} />
         <Route path="products/:id/:slug" element={<ProductDetailsPage />} />
+        <Route path="collections/:id/:slug" element={<CollectionPage />} />
       </Route>
     </Routes>
   );
