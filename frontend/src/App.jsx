@@ -6,6 +6,7 @@ import NotFound from './pages/NotFound';
 import Shop from './pages/Shop';
 import ProductDetailsPage from './pages/ProductDetailsPage';
 import CollectionPage from './pages/CollectionPage';
+import About from './pages/About';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="shop" element={<Shop />} />
         <Route path="products/:id/:slug" element={<ProductDetailsPage />} />
         <Route path="collections/:id/:slug" element={<CollectionPage />} />
+        <Route path="about" element={<About />} />
       </Route>
     </Routes>
   );

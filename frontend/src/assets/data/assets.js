@@ -34,6 +34,16 @@ import p_img14 from '../images/products/p_img14.webp';
 //About Images
 import about_img1 from '../images/about/about-img1-home-sec.webp';
 import about_img2 from '../images/about/about-img2-home-sec.webp';
+import about_p_img1 from '../images/about/about_p_img1.webp';
+import about_p_img2 from '../images/about/about_p_img2.webp';
+import about_p_img3 from '../images/about/about_p_img3.webp';
+import about_p_img4 from '../images/about/about_p_img4.webp';
+
+// Team Memeber Images
+import team_memb_img1 from '../images/team_members/team_memb_img1.webp';
+import team_memb_img2 from '../images/team_members/team_memb_img2.webp';
+import team_memb_img3 from '../images/team_members/team_memb_img3.webp';
+import team_memb_img4 from '../images/team_members/team_memb_img4.webp';
 
 //Blog Images
 import blog_img1 from '../images/blog/blog-img1.webp';
@@ -72,5 +82,14 @@ export const assets = {
 
   about_img1,
   about_img2,
+  about_p_img1,
+  about_p_img2,
+  about_p_img3,
+  about_p_img4,
+
+  team_memb_img1,
+  team_memb_img2,
+  team_memb_img3,
+  team_memb_img4,
   blog_img1,
 };
