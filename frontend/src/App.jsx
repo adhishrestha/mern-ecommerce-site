@@ -7,17 +7,19 @@ import Shop from './pages/Shop';
 import ProductDetailsPage from './pages/ProductDetailsPage';
 import CollectionPage from './pages/CollectionPage';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<MainLayout />}>
+      <Route element={<MainLayout />}>
         <Route index element={<Home />} />
-        <Route path="*" element={<NotFound />} />
         <Route path="shop" element={<Shop />} />
         <Route path="products/:id/:slug" element={<ProductDetailsPage />} />
         <Route path="collections/:id/:slug" element={<CollectionPage />} />
         <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );

@@ -1,10 +1,17 @@
 import React from 'react';
+import { twMerge } from 'tailwind-merge';
+import { clsx } from 'clsx';
 
 const HeroCard = ({ icon, children, className = '' }) => {
   return (
     <>
       {/* MOBILE + TABLET CARD */}
-      <div className="w-full bg-[#826F66] px-6 py-10 text-center text-[#FFFDFB] sm:px-10 lg:hidden">
+      <div
+        className={twMerge(
+          `w-full bg-[#826F66] px-6 py-10 text-center text-[#FFFDFB] sm:px-10 lg:hidden`,
+          className,
+        )}
+      >
         {icon && (
           <img
             src={icon}
@@ -19,7 +26,10 @@ const HeroCard = ({ icon, children, className = '' }) => {
 
       {/* DESKTOP CARD */}
       <div
-        className={`hidden h-full max-w-[420px] flex-col items-center justify-center bg-[#826F66] px-10 text-center text-[#FFFDFB] lg:flex ${className} `}
+        className={twMerge(
+          `hidden h-full max-w-[420px] flex-col items-center justify-center bg-[#826F66] px-10 text-center text-[#FFFDFB] lg:flex`,
+          className,
+        )}
       >
         {icon && (
           <img

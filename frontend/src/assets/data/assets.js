@@ -39,6 +39,10 @@ import about_p_img2 from '../images/about/about_p_img2.webp';
 import about_p_img3 from '../images/about/about_p_img3.webp';
 import about_p_img4 from '../images/about/about_p_img4.webp';
 
+// Contact Page Images
+import contact_page_banner_img from '../images/contact_page_banner_img.webp';
+import contact_page_banner_icon from '../icons/contact_page_banner_icon.svg';
+
 // Team Memeber Images
 import team_memb_img1 from '../images/team_members/team_memb_img1.webp';
 import team_memb_img2 from '../images/team_members/team_memb_img2.webp';
@@ -86,6 +90,9 @@ export const assets = {
   about_p_img2,
   about_p_img3,
   about_p_img4,
+
+  contact_page_banner_img,
+  contact_page_banner_icon,
 
   team_memb_img1,
   team_memb_img2,
